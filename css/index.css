@@ -1,0 +1,69 @@
+body{
+	margin: 0;
+}
+/*顶部*/
+.header{
+	height: 10.1rem;
+	background-image: url(../images/header-bkg.jpg);
+	background-size: cover;
+	color: white;
+	font-size: 0.8rem;
+	font-weight: lighter;
+}
+
+.topBar{
+	height: 1rem;
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;}
+.topBar img{
+		width: 1rem;
+}
+
+.header h1{
+	padding:0;
+	margin: 4rem 0 0 1rem;
+}
+
+/*主要内容*/
+
+.main {
+	font-size: 0.9rem;
+	padding: 1rem;
+}
+li{border: 
+	list-style-type:none;
+    list-style-image:url(../images/box_3.png);
+}
+
+ h3{
+	font-size: 0.9rem
+}
+.time,.remark{
+	color: #b2baca;
+}
+.content{
+	color:#7878a2;
+}
+
+.plan{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.pic{
+	width: 2rem;
+	height: 2rem;
+	margin-left: 1rem;
+}
+.fiveStar{
+	width: 1.5rem;
+	height: 1.5rem;
+
+}
+.text{
+	  display: flex;
+	  flex-direction: column;
+	  }
+.content,.remark{
+	  margin:0;}
