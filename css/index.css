@@ -1,16 +1,20 @@
 body{
 	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial;
 }
 /*顶部*/
 .header{
 	height: 10.1rem;
-	background-image: url(../images/header-bkg.jpg);
+	background-image: url("../images/header-bkg.jpg");	
 	background-size: cover;
 	color: white;
 	font-size: 0.8rem;
 	font-weight: lighter;
 }
-
+.mask{
+	background-color: purple;
+	height: 100%;
+}
 .topBar{
 	height: 1rem;
 	display: flex;
@@ -29,41 +33,104 @@ body{
 
 .main {
 	font-size: 0.9rem;
+	line-height: 1.5rem;
 	padding: 1rem;
+	padding-right: 0;
+	position: relative;
 }
-li{border: 
-	list-style-type:none;
-    list-style-image:url(../images/box_3.png);
+.add{
+	width: 3.2rem;
+	height: 3.2rem;
+	position: absolute;
+	right: 1rem;
+	top:-1.5rem;
 }
 
+.time{margin:0.5rem 0;}
+ul{
+	padding-left: 0;
+	margin:0;
+	
+}
+li{
+	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+
+.normal:before{
+	content:"";
+	display: block;
+	width: 1.5rem;
+	height: 1.5rem;
+	background-image: url(../images/box_3.png);
+	background-size: cover;
+	margin:0 0 1rem 0;
+	
+}
+
+.plan{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: solid 1px #ebedf3;
+	padding-bottom:0.8rem;
+	padding-right: 1rem;
+	margin:0;
+	width: 80%;
+}
+
+.pic{
+	width: 2rem;
+	height: 2rem;
+	padding-right: 1rem;
+
+	
+}
+.text{
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  height:3rem;
+	  width: 80%;
+	  }
+ .fiveStar{
+	width: 1.5rem;
+	height: 1.5rem;
+
+
+}
  h3{
-	font-size: 0.9rem
+	font-size: 1rem
 }
 .time,.remark{
 	color: #b2baca;
 }
 .content{
 	color:#7878a2;
+	width: 100%;
+	height: 50%;
+	overflow: hidden;
 }
 
-.plan{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-.pic{
-	width: 2rem;
-	height: 2rem;
-	margin-left: 1rem;
-}
-.fiveStar{
-	width: 1.5rem;
-	height: 1.5rem;
 
-}
-.text{
-	  display: flex;
-	  flex-direction: column;
-	  }
+
+
 .content,.remark{
 	  margin:0;}
+
+li:last-child .plan{
+	border: none;
+}
+
+/*已被删除的事件的样式*/
+.gone{
+	justify-content: flex-end;
+	text-decoration: line-through;
+	color: #ebedf3;
+}
+.gone h3{
+	color:#ebedf3;
+}
