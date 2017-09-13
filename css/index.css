@@ -12,7 +12,7 @@ body{
 	font-weight: lighter;
 }
 .mask{
-	background-color: purple;
+	background:rgba(179,134,241,0.5);
 	height: 100%;
 }
 .topBar{
